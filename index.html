@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaur Chrysalis 2.0 – NCR's Next Big Address</title>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="assets/logo.png" alt="Gaur Chrysalis Logo" class="logo-image" />
+        <div class="logo-text">
+          <span class="logo-title">GAUR CHRYSALIS</span>
+          <span class="logo-sub">2.0 — SECTOR 22D, YAMUNA EXPRESSWAY</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#offerings">Offerings</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#contact" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-grid-overlay"></div>
+      <img
+        src="assets/photo-1545324418-cc1a3fa10c00.jfif"
+        alt="Luxury Residential Tower"
+        class="hero-img"
+        id="heroImg"
+      />
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        LAUNCHING SOON — SECTOR 22D, YAMUNA EXPRESSWAY
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line title-line--thin">GAUR</span>
+        <span class="title-line title-line--bold">CHRYSALIS 2.0</span>
+        <span class="title-line title-line--accent">Double the Opportunity.</span>
+      </h1>
+      <p class="hero-tagline">12 Acres · 7 Grand Towers · 952 Premium Residences<br/>15 min from Jewar International Airport</p>
+
+      <div class="hero-stats">
+        <div class="hstat">
+          <span class="hstat-num">₹12K</span>
+          <span class="hstat-lbl">Launch BSP/sqft</span>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <span class="hstat-num">30+</span>
+          <span class="hstat-lbl">Years Legacy</span>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <span class="hstat-num">2X</span>
+          <span class="hstat-lbl">ROI Potential</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO FORM -->
+    <div class="hero-form-wrap">
+      <div class="form-card">
+        <div class="form-header">
+          <h3>Book Your Consultation</h3>
+          <p>Secure your spot in NCR's next iconic address</p>
+        </div>
+        <div class="form-body">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" id="f-name" />
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <div class="input-prefix">
+              <span>+91</span>
+              <input type="tel" placeholder="10-digit number" id="f-phone" maxlength="10" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>City</label>
+            <input type="text" placeholder="Enter your city" id="f-city" />
+          </div>
+          <div class="form-group">
+            <label>Interested In</label>
+            <select id="f-interest">
+              <option value="">Select configuration</option>
+              <option value="3bhk">3 BHK – 1600 sq.ft. (₹1.36 Cr*)</option>
+              <option value="4bhk">4 BHK – 1900 sq.ft. (₹1.61 Cr*)</option>
+              <option value="both">Both / Investment</option>
+            </select>
+          </div>
+          <button class="btn-submit" id="formSubmit" onclick="handleFormSubmit()">
+            <span>Request Callback</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-note">* Prices are indicative. Subject to change without notice.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======== DOUBLE OPPORTUNITY BANNER ======== -->
+  <section class="opportunity-banner">
+    <div class="opp-track" id="oppTrack">
+      <div class="opp-items">
+        <span>🏡 STUDIOS + PREMIUM RESIDENCES</span>
+        <span class="opp-sep">◆</span>
+        <span>🚀 2X GROWTH POTENTIAL</span>
+        <span class="opp-sep">◆</span>
+        <span>✈️ 15 MIN FROM JEWAR AIRPORT</span>
+        <span class="opp-sep">◆</span>
+        <span>💼 ₹1.36 CR ONWARDS</span>
+        <span class="opp-sep">◆</span>
+        <span>🏆 30+ YEARS LEGACY</span>
+        <span class="opp-sep">◆</span>
+        <span>📈 HIGH ROI INVESTMENT</span>
+        <span class="opp-sep">◆</span>
+        <span>🏡 STUDIOS + PREMIUM RESIDENCES</span>
+        <span class="opp-sep">◆</span>
+        <span>🚀 2X GROWTH POTENTIAL</span>
+        <span class="opp-sep">◆</span>
+        <span>✈️ 15 MIN FROM JEWAR AIRPORT</span>
+        <span class="opp-sep">◆</span>
+        <span>💼 ₹1.36 CR ONWARDS</span>
+        <span class="opp-sep">◆</span>
+        <span>🏆 30+ YEARS LEGACY</span>
+        <span class="opp-sep">◆</span>
+        <span>📈 HIGH ROI INVESTMENT</span>
+        <span class="opp-sep">◆</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== OVERVIEW ======== -->
+  <section class="overview-section" id="overview">
+    <div class="section-container">
+      <div class="section-label">THE DEVELOPMENT</div>
+      <div class="overview-grid">
+        <div class="overview-left reveal">
+          <h2 class="section-title">A New Chapter<br/><em>in Luxury Living</em></h2>
+          <p class="overview-text">Gaur Chrysalis 2.0 represents the convergence of studios and premium residences into a singular, market-defining development on the Yamuna Expressway. Crafted by three leading consultants and backed by Gaursons' 30-year legacy, this is not merely a home—it is a landmark of ambition.</p>
+          <p class="overview-text">Seven grand towers rise G+33 floors over 12 curated acres, offering 952 exclusive residences designed for discerning families and forward-thinking investors. With just four apartments per floor and four high-speed elevators per tower, exclusivity is built into the very architecture.</p>
+          <div class="overview-highlights">
+            <div class="oh-item">
+              <div class="oh-icon">◈</div>
+              <div>
+                <strong>RERA Registered</strong>
+                <span>UPRERAPRJ622344/11/2025</span>
+              </div>
+            </div>
+            <div class="oh-item">
+              <div class="oh-icon">◈</div>
+              <div>
+                <strong>Possession</strong>
+                <span>December 2030</span>
+              </div>
+            </div>
+            <div class="oh-item">
+              <div class="oh-icon">◈</div>
+              <div>
+                <strong>Towers</strong>
+                <span>7 Towers · G+33 Floors</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overview-right reveal">
+          <div class="overview-image-stack">
+            <img src="assets/photo-.jfif" alt="Luxury apartment exterior" class="ov-img ov-img-1" />
+            <img src="assets/photo2-.jfif" alt="Premium residence interior" class="ov-img ov-img-2" />
+            <div class="ov-badge-float">
+              <span class="obf-num">952</span>
+              <span class="obf-txt">Exclusive<br/>Units</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== OFFERINGS ======== -->
+  <section class="offerings-section" id="offerings">
+    <div class="section-container">
+      <div class="section-label">CONFIGURATIONS</div>
+      <h2 class="section-title text-center">Residences Crafted<br/><em>for the Discerning Few</em></h2>
+
+      <div class="price-tag-row">
+        <div class="price-tag">
+          <span class="pt-label">Prelaunch BSP</span>
+          <span class="pt-price">₹8,500<small>/sqft</small></span>
+        </div>
+        <div class="price-arrow">→</div>
+        <div class="price-tag price-tag--active">
+          <span class="pt-label">Launch BSP</span>
+          <span class="pt-price">₹12,000<small>/sqft</small></span>
+        </div>
+      </div>
+
+      <div class="offerings-grid">
+        <div class="offering-card reveal">
+          <div class="oc-image">
+            <img src="assets/p3.jfif" alt="3 BHK Apartment" />
+            <div class="oc-tag">3 BHK</div>
+          </div>
+          <div class="oc-body">
+            <h3>Spacious Three Bedroom</h3>
+            <div class="oc-specs">
+              <div class="spec-item">
+                <span class="spec-icon">⬜</span>
+                <span>1600 sq.ft.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🛏</span>
+                <span>3 Bedrooms</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🚿</span>
+                <span>Premium Baths</span>
+              </div>
+            </div>
+            <div class="oc-price">Starting ₹1.36 Cr<sup>*</sup></div>
+            <a href="#contact" class="btn-outline">Enquire Now</a>
+          </div>
+        </div>
+
+        <div class="offering-card offering-card--premium reveal">
+          <div class="oc-ribbon">BESTSELLER</div>
+          <div class="oc-image">
+            <img src="assets/p4.jfif" alt="4 BHK Premium Apartment" />
+            <div class="oc-tag">4 BHK</div>
+          </div>
+          <div class="oc-body">
+            <h3>Premium Four Bedroom</h3>
+            <div class="oc-specs">
+              <div class="spec-item">
+                <span class="spec-icon">⬜</span>
+                <span>1900 sq.ft.</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🛏</span>
+                <span>4 Bedrooms</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🚿</span>
+                <span>Luxury Baths</span>
+              </div>
+            </div>
+            <div class="oc-price">₹1.61 Cr<sup>*</sup></div>
+            <a href="#contact" class="btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== WHY INVEST ======== -->
+  <section class="invest-section">
+    <div class="invest-bg"></div>
+    <div class="section-container">
+      <div class="section-label" style="color:var(--gold-light)">WHY INVEST</div>
+      <h2 class="section-title" style="color:var(--cream)">Five Reasons This is<br/><em>NCR's Defining Opportunity</em></h2>
+      <div class="invest-grid">
+        <div class="invest-card reveal">
+          <div class="ic-num">01</div>
+          <div class="ic-icon">✈️</div>
+          <h4>Airport Proximity</h4>
+          <p>Just 15 minutes from Jewar International Airport—one of Asia's largest upcoming airports—ensuring exponential value appreciation.</p>
+        </div>
+        <div class="invest-card reveal">
+          <div class="ic-num">02</div>
+          <div class="ic-icon">📐</div>
+          <h4>12-Acre Premium Canvas</h4>
+          <p>A sprawling development with 75,000+ sq.ft. clubhouse, sky-view terraces, Olympic pools, and 8 acres of lush greenery.</p>
+        </div>
+        <div class="invest-card reveal">
+          <div class="ic-num">03</div>
+          <div class="ic-icon">🏛️</div>
+          <h4>30+ Years Legacy</h4>
+          <p>Gaursons India—NCR's most trusted developer—with 45+ successful projects and an unblemished record of timely delivery.</p>
+        </div>
+        <div class="invest-card reveal">
+          <div class="ic-num">04</div>
+          <div class="ic-icon">💹</div>
+          <h4>Dual Revenue Potential</h4>
+          <p>Studios meeting premium residences—two market segments, broader buyer pool, and faster sales cycles for investors.</p>
+        </div>
+        <div class="invest-card reveal">
+          <div class="ic-num">05</div>
+          <div class="ic-icon">🏆</div>
+          <h4>Competitive Launch Pricing</h4>
+          <p>BSP at ₹12,000/sqft during launch—significantly below projected post-possession rates as infrastructure matures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== AMENITIES ======== -->
+  <section class="amenities-section" id="amenities">
+    <div class="section-container">
+      <div class="section-label">WORLD-CLASS LIVING</div>
+      <h2 class="section-title text-center">Amenities That<br/><em>Redefine the Everyday</em></h2>
+      <div class="amenities-grid">
+        <div class="am-card reveal" data-delay="0">
+          <div class="am-icon">🌿</div>
+          <h4>Landscaped Green Zones</h4>
+          <p>8 acres of curated gardens, open lawns, and nature walks woven through the development.</p>
+        </div>
+        <div class="am-card reveal" data-delay="100">
+          <div class="am-icon">🏊</div>
+          <h4>Olympic Swimming Pools</h4>
+          <p>Olympic and half-Olympic pools for leisure and lap swimming within the clubhouse complex.</p>
+        </div>
+        <div class="am-card reveal" data-delay="200">
+          <div class="am-icon">🏋️</div>
+          <h4>Fitness & Wellness Centre</h4>
+          <p>State-of-the-art gym, aerobics studio, dance floor, and dedicated wellness zones.</p>
+        </div>
+        <div class="am-card reveal" data-delay="300">
+          <div class="am-icon">🔐</div>
+          <h4>Smart Security</h4>
+          <p>24/7 CCTV, boom barriers, smart intercoms, and professional security for total peace of mind.</p>
+        </div>
+        <div class="am-card reveal" data-delay="400">
+          <div class="am-icon">🎭</div>
+          <h4>Amphitheatre & Social Spaces</h4>
+          <p>Amphitheatre, banquet hall, café, and community areas for vibrant community life.</p>
+        </div>
+        <div class="am-card reveal" data-delay="500">
+          <div class="am-icon">🛝</div>
+          <h4>Kids & Recreation Zones</h4>
+          <p>Dedicated children's play areas, indoor sports, and recreational facilities for all ages.</p>
+        </div>
+      </div>
+      <div class="amenities-footer reveal">
+        <div class="af-number">75,000<sup>+</sup></div>
+        <div class="af-label">sq.ft. Clubhouse<br/>of Luxury Amenities</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== LOCATION ======== -->
+  <section class="location-section" id="location">
+    <div class="loc-image-bg">
+      <img src="assets/p5.jfif" alt="Aerial city view" />
+      <div class="loc-overlay"></div>
+    </div>
+    <div class="section-container">
+      <div class="section-label" style="color:var(--gold-light)">PRIME LOCATION</div>
+      <h2 class="section-title" style="color:var(--cream)">Where Connectivity<br/><em>Meets Convenience</em></h2>
+      <div class="location-grid">
+        <div class="loc-item reveal">
+          <div class="loc-time">15 min</div>
+          <div class="loc-place">Jewar International Airport</div>
+        </div>
+        <div class="loc-item reveal">
+          <div class="loc-time">20 min</div>
+          <div class="loc-place">Buddh International Circuit (F1 Track)</div>
+        </div>
+        <div class="loc-item reveal">
+          <div class="loc-time">25 min</div>
+          <div class="loc-place">Film City, Greater Noida</div>
+        </div>
+        <div class="loc-item reveal">
+          <div class="loc-time">30 min</div>
+          <div class="loc-place">Noida City Centre</div>
+        </div>
+        <div class="loc-item reveal">
+          <div class="loc-time">45 min</div>
+          <div class="loc-place">Connaught Place, Delhi</div>
+        </div>
+        <div class="loc-item reveal">
+          <div class="loc-time">Near</div>
+          <div class="loc-place">Yamuna Expressway — Direct Access</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT SECTION ======== -->
+  <section class="contact-section" id="contact">
+    <div class="section-container">
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <div class="section-label">SECURE YOUR SPOT</div>
+          <h2 class="section-title">Don't Miss NCR's<br/><em>Defining Address</em></h2>
+          <p class="contact-text">Rising demand, limited inventory, and proximity to Jewar Airport make early investment in Chrysalis 2.0 the smartest move in the NCR market today.</p>
+          <div class="contact-details">
+            <div class="cd-item">
+              <span class="cd-icon">📞</span>
+              <a href="tel:+919999999999">+91 99999 99999</a>
+            </div>
+            <div class="cd-item">
+              <span class="cd-icon">💬</span>
+              <a href="https://wa.me/919999999999" target="_blank">WhatsApp Us</a>
+            </div>
+            <div class="cd-item">
+              <span class="cd-icon">📍</span>
+              <span>Sector 22D, Yamuna Expressway, Greater Noida</span>
+            </div>
+          </div>
+          <div class="developer-badge">
+            <div class="db-inner">
+              <img src="assets/logo.png" alt="Gaursons Logo" class="db-logo-img" />
+              <div>
+                <strong>Gaursons India Ltd.</strong>
+                <span>30+ Years of Excellence · 45+ Projects Delivered</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <div class="contact-form-card">
+            <h3>Request a Site Visit</h3>
+            <div class="cf-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="Your full name" id="cf-name" />
+            </div>
+            <div class="cf-group">
+              <label>Phone</label>
+              <div class="input-prefix">
+                <span>+91</span>
+                <input type="tel" placeholder="10-digit number" id="cf-phone" maxlength="10" />
+              </div>
+            </div>
+            <div class="cf-group">
+              <label>City</label>
+              <input type="text" placeholder="Enter your city" id="cf-city" />
+            </div>
+            <div class="cf-group">
+              <label>Preferred Visit Date</label>
+              <input type="date" id="cf-date" />
+            </div>
+            <div class="cf-group">
+              <label>Message (Optional)</label>
+              <textarea placeholder="Any specific queries..." id="cf-msg" rows="3"></textarea>
+            </div>
+            <button class="btn-submit" onclick="handleContactSubmit()">
+              <span>Schedule Visit</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="form-note">*We'll contact you within 2 hours during business hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="Gaur Chrysalis Logo" class="logo-image" />
+          <div>
+            <span class="logo-title">GAUR CHRYSALIS 2.0</span>
+            <span class="logo-sub">Sector 22D · Yamuna Expressway · Greater Noida</span>
+          </div>
+        </div>
+        <p class="footer-disc">RERA No: UPRERAPRJ622344/11/2025 · Prices mentioned are subject to change. Images are for representation purposes only. This is a marketing communication. Please refer to official documents for accurate details.</p>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Gaursons India Ltd. All rights reserved. · Crafted by 3 Leading Design Consultants</p>
+        <p class="footer-credit">Designed & Developed by <strong>Aajneeti Connect Limited</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======== FLOATING ACTIONS ======== -->
+  <div class="floating-actions">
+    <a href="tel:+919999999999" class="fab-btn fab-call" title="Call Now" aria-label="Call">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.93 19.79 19.79 0 0117 8.18 2 2 0 0119 10.09v2.83"/>
+        <path d="M22 16.92A20 20 0 0117.07 22"/>
+      </svg>
+      <span class="fab-tooltip">Call Now</span>
+    </a>
+    <a href="https://wa.me/919999999999?text=Hi%2C%20I%20am%20interested%20in%20Gaur%20Chrysalis%202.0" target="_blank" class="fab-btn fab-whatsapp" title="WhatsApp" aria-label="WhatsApp">
+      <svg viewBox="0 0 32 32" fill="currentColor">
+        <path d="M16 2C8.27 2 2 8.27 2 16c0 2.47.68 4.84 1.86 6.88L2 30l7.36-1.84A13.93 13.93 0 0016 30c7.73 0 14-6.27 14-14S23.73 2 16 2zm0 25.5a11.5 11.5 0 01-5.83-1.58l-.42-.25-4.37 1.09 1.1-4.28-.27-.44A11.5 11.5 0 1116 27.5zm6.33-8.62c-.35-.17-2.06-1.02-2.38-1.13-.32-.12-.55-.17-.78.17-.23.35-.9 1.13-1.1 1.37-.2.23-.4.26-.74.09a9.3 9.3 0 01-4.63-4.04c-.35-.6.35-.56.99-1.87.11-.23.06-.43-.03-.6-.09-.17-.78-1.88-1.07-2.58-.28-.67-.57-.58-.78-.59l-.66-.01c-.23 0-.6.09-.91.43-.32.35-1.2 1.17-1.2 2.85s1.23 3.3 1.4 3.53c.17.23 2.42 3.7 5.87 5.19 2.19.94 3.05 1.02 4.14.86.67-.1 2.06-.84 2.35-1.66.29-.82.29-1.52.2-1.66-.08-.14-.3-.23-.65-.4z"/>
+      </svg>
+      <span class="fab-tooltip">WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- ======== SUCCESS TOAST ======== -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✓</span>
+    <span id="toast-msg">Thank you! We'll contact you shortly.</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
